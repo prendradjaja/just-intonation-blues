@@ -3,7 +3,7 @@ const range = document.getElementById("output-volume");
 range.min = 0.0;
 range.max = 2.0;
 range.step = .1;
-range.value = 1.3;
+range.value = 0.3; // If you change me, change context.masterOut.gain.value in index.html too!
 range.addEventListener("input", e => context.masterOut.gain.value = range.value);
 
 
